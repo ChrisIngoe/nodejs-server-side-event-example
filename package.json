@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-server-side-event-example",
+  "private": "false",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/ChrisIngoe/nodejs-server-side-event-example.git",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon ./src/app.js",
+    "lint": "eslint . --fix",
+    "lint:watch": "npm run lint -- --watch",
+    "prettier-fix": "prettier --config .prettierrc.json --write .",
+    "prettier-check": "prettier --config .prettierrc.json --check .",
+    "start": "node ./src/app.js"
+  },
+  "dependencies": {
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2"
+  }
+}
